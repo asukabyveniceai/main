@@ -3,136 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ASUKA | AI</title>
+  <title>😼 The Ticker is CAT</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(to bottom right, #1a1a1a, #ff69b4);
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ffc0cb 0%, #ff69b4 100%);
       color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      padding: 20px;
+      padding: 2rem;
+      animation: bgMove 20s infinite alternate;
     }
 
-    .header {
-      margin-top: 50px;
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    img {
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+      animation: float 4s ease-in-out infinite;
+      margin-top: 20px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
 
     h1 {
-      font-size: 3em;
-      color: #ffb6c1;
-      text-shadow: 2px 2px #000;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
 
-    .asuka-img {
-      margin-top: 30px;
-      width: 280px;
-      height: 280px;
-      border-radius: 50%;
-      border: 5px solid #ff69b4;
-      overflow: hidden;
-      box-shadow: 0 0 30px #ff69b4;
-      position: relative;
-    }
-
-    .black-sun {
-      position: absolute;
-      top: -20px;
-      left: -20px;
-      width: 320px;
-      height: 320px;
-      border: 5px dashed #000;
-      border-radius: 50%;
-      animation: spin 4s linear infinite reverse;
-      z-index: 1;
-    }
-
-    .asuka-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 2;
-      position: relative;
-    }
-
-    @keyframes spin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    .info {
-      margin-top: 30px;
-      font-size: 1.2em;
-      background: rgba(255, 105, 180, 0.1);
-      border: 2px solid #ff69b4;
-      border-radius: 10px;
-      padding: 20px;
+    p {
+      font-size: 1.2rem;
       max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
-    a {
-      color: #ffb6c1;
-      text-decoration: none;
-      font-weight: bold;
+    .wallet, .link {
+      margin-top: 1rem;
+      background: rgba(0,0,0,0.2);
+      padding: 1rem;
+      border-radius: 12px;
+      word-break: break-all;
+      font-family: monospace;
     }
 
-    a:hover {
-      color: white;
+    .link a {
+      color: #fff;
+      text-decoration: underline;
     }
 
-    .footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #ccc;
+    .meow {
+      font-size: 2rem;
+      margin-top: 2rem;
+      animation: pulse 1.5s infinite;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2em;
-      }
-      .asuka-img {
-        width: 200px;
-        height: 200px;
-      }
-      .black-sun {
-        width: 240px;
-        height: 240px;
-        top: -20px;
-        left: -20px;
-      }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.7; }
     }
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1>ASUKA</h1>
-<p style="color: #ffc9e2; font-size: 1.1em; margin-top: 10px;">
-  sends AI generated Asuka with a Black Sun spinning hat, counter-clockwise and hardstyle!
-</p>
-    <div class="asuka-img">
-      <div class="black-sun"></div>
-      <img src="assuka.jpg" alt="Asuka">
-    </div>
+  <h1>😺 Meoowww! The Ticker is CAT</h1>
+  <p>Do you heard it?<br>It's our cat that stick and change sol meta space.</p>
+  <img src="cats.jpg" alt="">
+  <div class="wallet">
+    <strong>Try so:</strong><br>
+    Efu9yTkctzFAxofpVpnLsu51CqB7JdzQGxHQK8K4DQ1u
   </div>
-
-  <div class="info">
-    <p><strong>Contract Address (CA):</strong> <br> <code style="font-size: 0.7em;">AmkMDveyBhASNJx41vP1f3iNoqtTAwP2xsaRwgAjwoib</code>
-</p><br><br>
-    <p><a href="https://dexscreener.com/solana/7kfkhm9n4f2fftit8ktcv7pxjjuixca39llem5reaftb" target="_blank">📈 View on DEXScreener</a></p>
-    <p><a href="https://t.me/asukabyveniceai" target="_blank">👾 Join Telegram</a></p>
+  <div class="link">
+    <a href="https://t.me/thetickeriscat" target="_blank">Join Telegram → @thetickeriscat</a>
   </div>
-
-  <div class="footer">
-    <p>Built with 💖 for true ai believers.</p>
-  </div>
+  <div class="meow">Meowverse Awaits...</div>
 </body>
 </html>
